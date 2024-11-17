@@ -1,4 +1,4 @@
-import { selector } from 'recoil';
+import { atom, selector } from 'recoil';
 
 export const notifications = atom({
     key: 'networkAtom',
