@@ -10,7 +10,7 @@ import {
     notificationsAtom,
 } from './atoms';
 
-function App() {
+export default function App() {
     return (
         <RecoilRoot>
             <MainApp />
@@ -50,5 +50,3 @@ function MainApp() {
         </>
     );
 }
-
-export default App;
