@@ -1,11 +1,10 @@
 import { selector } from 'recoil';
-import { notificationsAtom } from './atoms';
 
 export const notifications = atom({
     key: 'networkAtom',
     default: selector({
         key: 'networkAtomSelector', // Unique identifier for the selector.
-        get: async ({ get }) => {
+        get: async () => {
             const response = await axios.get(
                 'https://sum-server.100xdevs.com/notifications',
             );
